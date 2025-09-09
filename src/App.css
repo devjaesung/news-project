@@ -40,3 +40,48 @@
 .read-the-docs {
   color: #888;
 }
+
+.news-app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 8px 12px;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.news-item {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.news-item h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.news-item p {
+  margin: 0 0 6px 0;
+  color: #bbb;
+}
+
+.error {
+  color: #ff6b6b;
+}

@@ -1,12 +1,25 @@
-# React + Vite
+# Naver News Search (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 설정
 
-Currently, two official plugins are available:
+1. 프로젝트 루트(`news-project`)에 `.env.local` 파일 생성 후 아래 키를 넣습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+NAVER_CLIENT_ID=여기에_클라이언트_ID
+NAVER_CLIENT_SECRET=여기에_클라이언트_SECRET
+```
 
-## Expanding the ESLint configuration
+2. 개발 서버 실행
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+npm run dev
+```
+
+## 사용법
+
+- 상단 검색창에 키워드를 입력하고 검색을 누르면 네이버 뉴스 Open API를 통해 기사를 가져옵니다.
+- API 호출은 클라이언트에서 직접 하지 않고 `/api/news` 프록시 경유로 이루어집니다.
+
+## 참고
+
+- 네이버 개발자 센터에서 애플리케이션을 생성해 `Client ID/Secret`을 발급받아야 합니다.
